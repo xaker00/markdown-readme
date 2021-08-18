@@ -74,12 +74,15 @@ function renderLicenseSection(license) {
  */
 function generateMarkdown(data) {
   return `# ${data.title}
+
 ${renderLicenseBadge(data.license)}
 
 ## Description
+
 ${data.description}
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -88,21 +91,27 @@ ${data.description}
 - [Questions](#questions)
 
 ## Installation
+
 ${data.installation}
 
 ## Usage
+
 ${data.usage}
 
 ## License
+
 ${renderLicenseSection(data.license)}
 
 ## Contributing
+
 ${data.contributing}
 
 ## Tests
+
 ${data.tests}
 
 ## Questions
+
 For questions contact [${data.email}](mailto:${data.email}) or [github](https://github.com/${data.github}).
 `;
 }
